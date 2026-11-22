@@ -1,0 +1,53 @@
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  width: 100%;
+}
+
+.nav-login-btn {
+  background: white;
+  color: #198754;
+  border: 1px solid #198754;
+  padding: 12px 22px;
+  border-radius: 9px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.nav-login-btn:hover {
+  background: #198754;
+  color: white;
+}
+
+.nav-getstarted-btn {
+  background: #198754;
+  color: white;
+  border: 1px solid #198754;
+  padding: 12px 24px;
+  border-radius: 9px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.nav-getstarted-btn:hover {
+  background: #146c43;
+  border-color: #146c43;
+}

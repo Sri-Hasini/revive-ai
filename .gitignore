@@ -1,0 +1,12 @@
+<<<<<<< HEAD
+__pycache__/
+*.py[cod]
+.venv/
+=======
+.history/
+**/node_modules/
+**/dist/
+.env
+.env.*
+!.env.example
+>>>>>>> origin/frontend
