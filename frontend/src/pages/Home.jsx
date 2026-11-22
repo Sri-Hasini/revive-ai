@@ -100,10 +100,25 @@ function Home() {
           display: "flex",
           gap: "12px"
         }}>
-          <button style={loginStyle}>Login</button>
+          {/* <button onClick={() => window.location.href = "/login"}>
+            Login
+          </button>
           <button
             style={navButtonStyle}
             onClick={() => document.getElementById("explore")?.scrollIntoView({ behavior: "smooth" })}
+          >
+            Get Started
+          </button> */}
+          <button
+          className="nav-login-btn"
+          onClick={() => window.location.href = "/login"}
+          >
+            Login
+          </button>
+
+          <button
+            className="nav-getstarted-btn"
+            onClick={() => window.location.href = "/register"}
           >
             Get Started
           </button>
