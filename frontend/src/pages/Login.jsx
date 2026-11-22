@@ -142,14 +142,19 @@ function Login() {
               <span>OR</span>
             </div>
 
-            <p className="signup-text">
-              <div className="login-register">
-                Don't have an account?
-            {/* <a href="/register"> Register</a> */}
-            <Link to="/register">Register</Link>
-            </div>
-              <a href="/register"> Create Account</a>
-            </p>
+            
+<p className="signup-text">
+  Don't have an account?{" "}
+  <a href="/register">Create Account</a>
+</p>
+
+<p className="signup-text" style={{ marginTop: "18px" }}>
+  Want to explore the platform first?{" "}
+  <a href="/dashboard">
+    Try Dashboard Demo →
+  </a>
+</p>
+
 
             <div className="login-footer">
               By continuing, you agree to use ReVive AI

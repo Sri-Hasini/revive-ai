@@ -94,21 +94,18 @@ function Home() {
           <a href="#explore" style={linkStyle}>Explore</a>
           <a href="#how-it-works" style={linkStyle}>How It Works</a>
           <a href="#about" style={linkStyle}>About</a>
+          <a
+            href="/dashboard"
+            style={{ ...linkStyle, color: "#218c58", fontWeight: "700" }}
+          >
+            Dashboard Demo
+          </a>
         </div>
 
         <div style={{
           display: "flex",
           gap: "12px"
         }}>
-          {/* <button onClick={() => window.location.href = "/login"}>
-            Login
-          </button>
-          <button
-            style={navButtonStyle}
-            onClick={() => document.getElementById("explore")?.scrollIntoView({ behavior: "smooth" })}
-          >
-            Get Started
-          </button> */}
           <button
           className="nav-login-btn"
           onClick={() => window.location.href = "/login"}
@@ -184,17 +181,21 @@ function Home() {
           }}>
             <button
               style={heroButtonStyle}
-              onClick={() => document.getElementById("explore")?.scrollIntoView({ behavior: "smooth" })}
+              onClick={() => window.location.href = "/dashboard?section=browse"}
             >
               Explore Items →
             </button>
 
-            <button
-              style={secondaryButtonStyle}
-              onClick={() => document.getElementById("explore")?.scrollIntoView({ behavior: "smooth" })}
-            >
-              List an Item
-            </button>
+            
+<button
+  style={secondaryButtonStyle}
+  onClick={() =>
+    window.location.href = "/dashboard?section=donate"
+  }
+>
+  List an Item
+</button>
+
           </div>
 
         </div>
@@ -457,11 +458,11 @@ function Home() {
 
           <div>
             <h3>Quick Links</h3>
-
             <p><a href="#top" style={footerLinkStyle}>Home</a></p>
             <p><a href="#explore" style={footerLinkStyle}>Explore</a></p>
             <p><a href="#how-it-works" style={footerLinkStyle}>How It Works</a></p>
             <p><a href="#about" style={footerLinkStyle}>About Us</a></p>
+            <p><a href="/dashboard" style={footerLinkStyle}>Dashboard Demo</a></p>
           </div>
 
           <div>

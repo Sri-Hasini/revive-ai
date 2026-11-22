@@ -1,0 +1,22 @@
+.donate-heading p { color: #198754; font-size: 12px; font-weight: bold; letter-spacing: 1.6px; }
+.donate-heading h1 { color: #20452e; font-size: 29px; margin: 12px 0; }
+.donate-heading span { color: #718078; font-size: 14px; }
+.donate-form { margin-top: 26px; background: white; border: 1px solid #e3eee6; border-radius: 16px; padding: 30px; }
+.donate-form-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+.donate-full { grid-column: 1 / -1; }
+.donate-field label { display: block; color: #2a4935; font-size: 14px; font-weight: 600; margin-bottom: 9px; }
+.donate-field input, .donate-field select, .donate-field textarea { width: 100%; min-height: 47px; padding: 12px 13px; border: 1px solid #d8e5db; border-radius: 8px; font: inherit; font-size: 14px; color: #24352b; background: #fff; }
+.donate-field textarea { resize: vertical; }
+.donate-field input:focus, .donate-field select:focus, .donate-field textarea:focus { outline: 2px solid #a9d8b7; border-color: #198754; }
+.donate-field small { display: block; margin-top: 8px; font-size: 12px; color: #78877c; line-height: 1.5; }
+.donate-preview { display: block; max-width: 260px; max-height: 230px; object-fit: contain; margin-top: 15px; border: 1px solid #d8e5db; border-radius: 10px; }
+.donate-actions { display: flex; gap: 12px; justify-content: flex-end; margin-top: 25px; flex-wrap: wrap; }
+.donate-submit, .donate-reset { padding: 13px 22px; border-radius: 8px; font: inherit; font-weight: 600; font-size: 14px; cursor: pointer; }
+.donate-submit { background: #198754; color: white; border: 1px solid #198754; }
+.donate-submit:hover { background: #146c43; }
+.donate-reset { background: white; color: #198754; border: 1px solid #198754; }
+.donate-error, .donate-success { border-radius: 8px; padding: 13px 15px; font-size: 14px; margin-top: 18px; }
+.donate-error { background: #fff0ef; color: #ae3535; }
+.donate-success { background: #e8f7ed; color: #176d43; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+.donate-success button { border: 0; background: transparent; color: #176d43; font-weight: bold; cursor: pointer; }
+@media (max-width: 650px) { .donate-form { padding: 20px; } .donate-form-grid { grid-template-columns: 1fr; } .donate-heading h1 { font-size: 25px; } }
